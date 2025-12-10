@@ -1,0 +1,131 @@
+/* src/index.css */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  color: #e50914; /* Vermelho Netflix */
+}
+
+.input-busca {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-filmes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-filme {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card-filme:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+  border-radius: 5px;
+  height: 300px;
+  object-fit: cover;
+}
+/* Fundo escuro transparente que cobre a tela toda */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Bem escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Fica na frente de tudo */
+}
+
+/* A caixinha do conteúdo */
+.modal-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.4); /* Brilho vermelho sutil */
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.sinopse {
+  line-height: 1.5;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.btn-fechar {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  float: right;
+  font-weight: bold;
+}
+
+.btn-fechar:hover {
+  background-color: #b20710;
+}
+.form-busca {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-busca {
+  margin: 0; /* Removemos a margem antiga para alinhar */
+  width: 300px;
+}
+
+.btn-buscar {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-buscar:hover {
+  background-color: #b20710;
+}
