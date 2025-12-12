@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cássio W. S. Lima | Showcase</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // Sua Public Key já está aqui
+      emailjs.init("1__DrRxyx89ZX5gkA");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <div class="bg-gradient"></div>
+
+  <nav class="navbar">
+    <div class="logo">Cássio<span>.dev</span></div>
+    <div class="nav-indicators"></div>
+    <a href="#contact" class="btn-contact" onclick="swiper.slideTo(4)">Fale Comigo</a>
+  </nav>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide home-slide">
+        <div class="container">
+          <div class="hero-content" data-swiper-parallax="-300">
+            <span class="tag">Portfolio 2025</span>
+            <h1>Engenharia <br><span>& Criatividade</span></h1>
+            <p>Olá, sou <strong>Cássio Lima</strong>. Transformo linhas de código em experiências digitais imersivas.
+            </p>
+            <div class="hero-btns">
+              <a href="#" class="btn-primary" onclick="swiper.slideNext()">Ver Projetos</a>
+              <a href="https://github.com/Cassiowelison" target="_blank" class="btn-outline">
+                <i class='bx bxl-github'></i> Github
+              </a>
+            </div>
+          </div>
+          <div class="hero-img" data-swiper-parallax="-100">
+            <div class="img-frame">
+              <img src="FotoPerfilCV.png" alt="Cássio Profile">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide education-slide">
+        <div class="container column">
+          <div class="section-header" data-swiper-parallax="-200">
+            <h2>Formação Acadêmica</h2>
+            <p>A base teórica que impulsiona a inovação.</p>
+          </div>
+          <div class="education-grid">
+            <div class="glass-card featured">
+              <div class="card-icon"><i class='bx bxs-graduation'></i></div>
+              <h3>Engenharia de Software</h3>
+              <h4>UNIFEMM</h4>
+              <span class="status pulse">Em andamento (4º Semestre)</span>
+              <p>Foco em Arquitetura de Software, Design Patterns e Metodologias Ágeis.</p>
+            </div>
+            <div class="glass-card">
+              <div class="card-icon"><i class='bx bx-code-block'></i></div>
+              <h3>Análise e Desenv. de Sistemas</h3>
+              <h4>UNIFEMM</h4>
+              <span class="status">Conclusão: Julho/2026</span>
+              <p>Desenvolvimento Full-stack, Banco de Dados e Lógica Avançada.</p>
+            </div>
+            <div class="glass-card">
+              <div class="card-icon"><i class='bx bx-laptop'></i></div>
+              <h3>Engenharia da Computação</h3>
+              <h4>Transferência</h4>
+              <span class="status completed">3º Semestre Concluído</span>
+              <p>Base sólida em hardware e lógica de baixo nível.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide project-slide">
+        <div class="container column">
+          <div class="section-header">
+            <h2>Projetos em Destaque</h2>
+            <p>Arraste para o lado para ver mais <i class='bx bx-right-arrow-alt'></i></p>
+          </div>
+          <div class="swiper projectSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card-project">
+                <div class="project-img">
+                  <img src="https://via.placeholder.com/400x250/000/fff?text=Projeto+1" alt="Projeto">
+                  <div class="overlay">
+                    <a href="#" class="btn-view"><i class='bx bx-link-external'></i> Ver Live</a>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <h3>E-commerce Full Stack</h3>
+                  <p>React, Node.js e MongoDB.</p>
+                  <div class="tech-tags">
+                    <span>React</span><span>Node</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card-project">
+                <div class="project-img">
+                  <img src="https://via.placeholder.com/400x250/000/fff?text=Projeto+2" alt="Projeto">
+                </div>
+                <div class="project-info">
+                  <h3>Dashboard Financeiro</h3>
+                  <p>Controle de gastos com gráficos.</p>
+                  <div class="tech-tags">
+                    <span>JS</span><span>Chart.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-h"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide stack-slide">
+        <div class="container column">
+          <div class="section-header">
+            <h2>Arsenal Tecnológico</h2>
+          </div>
+          <div class="honeycomb-wrapper">
+            <div class="honeycomb-grid">
+              <div class="hex-item js" title="JavaScript"><i class='bx bxl-javascript'></i></div>
+              <div class="hex-item react" title="React"><i class='bx bxl-react'></i></div>
+              <div class="hex-item node" title="Node.js"><i class='bx bxl-nodejs'></i></div>
+              <div class="hex-item html" title="HTML5"><i class='bx bxl-html5'></i></div>
+              <div class="hex-item css" title="CSS3"><i class='bx bxl-css3'></i></div>
+              <div class="hex-item python" title="Python"><i class='bx bxl-python'></i></div>
+              <div class="hex-item sql" title="SQL"><i class='bx bxs-data'></i></div>
+              <div class="hex-item git" title="Git"><i class='bx bxl-git'></i></div>
+            </div>
+          </div>
+          <div class="stack-details">
+            <p><i class='bx bx-mouse'></i> Passe o mouse nos ícones</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide contact-slide">
+        <div class="container">
+          <div class="contact-box">
+            <h2>Vamos construir o futuro?</h2>
+            <p>Disponível para estágios e projetos freelance.</p>
+
+            <form id="contact-form" class="glass-form">
+              <input type="text" name="user_name" placeholder="Seu Nome" required>
+              <input type="email" name="user_email" placeholder="Seu Email" required>
+              <textarea name="message" placeholder="Mensagem" required></textarea>
+              <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+
+            <div class="social-links">
+              <a href="https://linkedin.com/in/..." target="_blank">LinkedIn <i class='bx bxl-linkedin-square'></i></a>
+              <a href="https://github.com/Cassiowelison" target="_blank">GitHub <i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+        </div>
+        <footer>© 2025 Cássio Lima - Showcase Portfolio</footer>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Blizzard Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SEU NOME</div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#gallery">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#" class="btn-login">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch">CRIADOR DE MUNDOS</h1>
+            <p>Desenvolvedor Full-Stack | UI/UX Designer | Entusiasta de RPG</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn-primary">Ver Portfólio</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery-section" id="gallery">
+        <h2> <i class="fas fa-gamepad"></i> Seleção de Projetos</h2>
+        <div class="games-grid" id="grid-container"></div>
+    </section>
+
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header" id="modal-image"></div>
+            <div class="modal-body">
+                <h2 id="modal-title">Título do Projeto</h2>
+                <div class="modal-tags" id="modal-tags">
+                    </div>
+                <p id="modal-desc">Descrição completa aqui...</p>
+                <a href="#" class="btn-primary" id="modal-link" target="_blank">Acessar Projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Produzido com HTML, CSS e JS Puro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
